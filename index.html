@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Front-End Exercise</title>
+        <link rel="icon" type="image/ico" href="assets/images/strondeLogo.png">
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <!--JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Google Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+    </head>
+  
+    <body>
+        <!-- Navbar -->
+        <nav class="topNav">
+            <div class="emailLogo">
+                <img id="logoImg" src="" alt="Img">
+            </div>
+            <div class="account" onclick="accountInfo()">
+                <a>
+                    <i class="fa fa-user-circle-o"></i>
+                    <div id="accountName" class="accountName"></div>
+                    <i id="angleDown" class="fa fa-angle-down"></i>
+                    <i id="angleUp" class="fa fa-angle-up hide"></i>
+                </a>
+                <div id="dropDown" class="dropDownContent">
+                    <a href="#">
+                        <i class="fa fa-envelope-o fa-lg"></i>
+                        <div>
+                            <div id="emailAccount" class="emailAccount">
+                            </div>
+                            <div id="timeZone" class="timeZone">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-key fa-lg"></i>
+                        Change password
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-user-o fa-lg"></i>
+                        Admin panel
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-lightbulb-o fa-lg"></i>
+                        Manage brands
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-sign-in fa-lg"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Content -->
+        <section class="module">
+            <div>
+                <h1 id="user"></h1>
+                <h3>Select master template:</h3>
+                <div id="moduleOptions" class="moduleOptions">
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="pageInfo">
+                This page has been created by Stronde Entreprise.
+            </div>
+            <div class="modifications">
+                <a class="terms" href="#">
+                    Terms
+                </a>
+                <a class="policy" href="#">
+                    Private Policy
+                </a>
+            </div>
+        </footer>
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>
